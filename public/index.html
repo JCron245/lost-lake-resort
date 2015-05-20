@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost Lake Resort | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+		
+    <script src="js/vendor/modernizr.js"></script>
+		<!-- angular stuff -->
+		<script src="bower_libs/angular/angular.min.js"></script>
+    <script src="bower_libs/angular-route/angular-route.min.js"></script>
+		<script src="ng-apps/main/app.js"></script>
+		<script src="ng-apps/main/controllers/app_ctrl.js"></script>
+		<!-- end angular stuff -->
+  </head>
+  <body ng-app="meanWreed">
+		<!-- Header -->
+		<div class="row nav-menu" ng-include="'/ng-apps/main/views/menu.html'">
+			
+		</div>
+		<!-- End Header -->
+		
+		<br />
+		<!-- ng view -->
+		<div ng-view>
+			<!-- angular yield -->
+		</div>
+		<!-- end ng view -->
+		<br/>
+		<!-- Footer -->
+		<div class="row nav-menu-bottom" ng-include="'/ng-apps/main/views/menu-bottom.html'">
+
+		</div>
+		
+	  <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  	<!-- end Footer -->
+	</body>
+</html>

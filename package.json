@@ -1,0 +1,9 @@
+{
+	"name": "mean-wreed",
+	"main": "server.js",
+	"dependencies": {
+		"express" : "~4.12.3",
+		"mongoose" : "~4.0.2",
+		"method-override" : "~2.0.2"        
+	}
+}
