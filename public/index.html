@@ -15,13 +15,20 @@
 		<!-- end angular stuff -->
   </head>
   <body ng-app="meanWreed">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/es_US/sdk.js#xfbml=1&version=v2.3&appId=428016200594274";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
 		<!-- Header -->
 		<div class="row nav-menu" ng-include="'/ng-apps/main/views/menu.html'">
 			
 		</div>
 		<!-- End Header -->
-		
-		<br />
 		<!-- ng view -->
 		<div ng-view>
 			<!-- angular yield -->
@@ -32,7 +39,7 @@
 		<div class="row nav-menu-bottom" ng-include="'/ng-apps/main/views/menu-bottom.html'">
 
 		</div>
-		
+
 	  <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>

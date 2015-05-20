@@ -1,5 +1,4 @@
 angular.module("meanWreed", ['ngRoute', 'AppCtrl'])
-
 // configuration
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
@@ -43,3 +42,5 @@ angular.module("meanWreed", ['ngRoute', 'AppCtrl'])
 	// end project route
 	// end routes
 }]);
+
+

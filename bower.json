@@ -1,8 +1,8 @@
 {
-	"name": "mean-wreed",
-	"version": "0.1.0",
-	"dependencies": {
- 		"angular": "latest",
-		"angular-route": "latest"   
-	}
+  "name": "mean-wreed",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest"
+  }
 }
