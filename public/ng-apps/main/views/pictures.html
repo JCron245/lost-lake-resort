@@ -1,0 +1,12 @@
+<div class="row" ng-init="getGallery('315409455196585');">
+	<div class="small-12 columns">
+		<h1>Pictures</h1>
+		<ul class="medium-block-grid-4 small-block-grid-2" data-clearing>
+			<li class="small-6 medium-3 columns photo" ng-repeat="photo in photos">
+				<a href="{{photo.src}}">
+					<img src="{{ photo.src }}" onload="$(document).foundation('clearing', 'reflow');" />
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

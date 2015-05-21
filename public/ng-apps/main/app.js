@@ -1,4 +1,4 @@
-angular.module("meanWreed", ['ngRoute', 'AppCtrl'])
+angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 
 // configuration
 .config(['$routeProvider', function($routeProvider) {

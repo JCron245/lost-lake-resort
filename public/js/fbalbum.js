@@ -14,7 +14,7 @@ angular.module('FbGallery', [])
 	}; // end availableSizes method
 	
 	return {
-		getAlbum: function(album_id) {
+		getAlbum: function(album_id, params, callback) {
 			$http.get('https://graph.facebook.com/' + album_id + '/photos').
 			success(function(data, status, headers, config) {
 				var album = {
@@ -36,13 +36,12 @@ angular.module('FbGallery', [])
 						availableSizes: availableSizes(photo.images)
 					});
 				} // end resp.data iterator
-				console.log('photos');
-				console.log(album.photos);
+				//angular.copy(album, scope_album);
+				callback(album);
 			}). // end success calback
 			error(function(data, status, headers, config) {
 				console.log('GET failed with status ' + status + ', data: ' + data);
 			});
-			
 		} // end getAlbum method
 	}; // end fbgallery return
 }) // end factory
