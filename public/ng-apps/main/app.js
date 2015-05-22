@@ -6,37 +6,43 @@ angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 	.when('/', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/index.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Home'
 	})
 	// end /
 	.when('/contact', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/contact.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Contact'
 	})
 	// end /contact
 	.when('/services', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/services.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Services'
 	})
 	// end /contact
 	.when('/rates', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/rates.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Rates'
 	})
 	// end /contact
 	.when('/map', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/map.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Map'
 	})
 	// end /contact
 	.when('/pictures', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/pictures.html',
-		controller: 'AppCtrl'
+		controller: 'AppCtrl',
+		title: 'Pictures'
 	})
 	// end /contact
 	; // end $routeProvider statement

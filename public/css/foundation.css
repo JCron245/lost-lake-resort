@@ -2086,23 +2086,23 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: #555555;
-      background: #222222;
+      background-color: #6579AF;
+      background: #6579AF;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
+      background: #43578f;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #222222; }
+        background-color: #6579AF;
+        background: #6579AF; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      background: #008CBA;
+      background: #43578f;
       color: #FFFFFF;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #0078a0;
+        background: #6579AF;
         color: #FFFFFF; }
     .top-bar-section .has-dropdown > a {
       padding-right: 2.1875rem !important; }
@@ -6324,3 +6324,8 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+@media only screen and (min-width: 40.0625em) {
+	.top-bar-section > li:not(.has-form) a:not(.button) {
+		background-color:#43578f;
+	}
+}
