@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var methodOverride = require('method-override');
 
-// configuration 
+// configurate it all
     
 // config files
 var db = require('./config/db');
