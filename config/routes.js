@@ -8,10 +8,7 @@ app.get('/', function(req, res) {
 	
 app.get('/send_mail', function(req, res) {
 	// handle the mail call
-	var transport = app.nodemailer.createTransport({
-		host: 'localhost',
-		port: 25
-	}); // end transport
+	var transport = app.nodemailer.createTransport(); // end transport
 	
 	var mail_opts = {
 		from: 'Lost Lakes River Resoirt <website@lostlakesriverresort.com>',
