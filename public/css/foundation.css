@@ -1789,6 +1789,7 @@ meta.foundation-mq-topbar {
       top: 50%; }
       .top-bar .toggle-topbar.menu-icon a {
         color: #FFFFFF;
+				background-color: #43578F;
         height: 34px;
         line-height: 33px;
         padding: 0 2.5rem 0 0.9375rem;
@@ -1809,11 +1810,11 @@ meta.foundation-mq-topbar {
     background: transparent;
     height: auto; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: #43578F; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: #BBB; }
       .top-bar.expanded .toggle-topbar a span::after {
-        box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888; }
+        box-shadow: 0 0 0 1px #BBB, 0 7px 0 1px #BBB, 0 14px 0 1px #BBB; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
       .top-bar.expanded .top-bar-section .has-dropdown.moved > .dropdown,
       .top-bar.expanded .top-bar-section .dropdown {
@@ -1840,7 +1841,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #222; }
+    background: #43578F; }
     .top-bar-section ul li > a {
       color: #FFF;
       display: block;
@@ -1851,6 +1852,9 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0.9375rem;
       text-transform: none;
       width: 100%; }
+			.top-bar-section ul li > a:hover {
+				background-color: #6579AF !important;
+			}
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-left: 0.9375rem;
@@ -1869,7 +1873,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
           background-color: #b9b9b9; }
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-          color: #333333; }
+          color: #FFF; }
       .top-bar-section ul li > a.button.success {
         background-color: #43AC6A;
         border-color: #368a55;
@@ -2083,7 +2087,7 @@ meta.foundation-mq-topbar {
       width: auto; }
       .top-bar-section ul li {
         float: left;
-				margin: 0 .04em;}
+				margin: .04rem .04rem;}
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
