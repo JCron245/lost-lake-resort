@@ -30,10 +30,16 @@
 		<!-- Thank-you page script -->
 		<script>
 			function passtest(){
-				if(window.location.search.indexOf('check=fail') > -1){
+				var myCheck = gup('check');
+				if(myCheck == 'fail'){
 					document.getElementById('success').style.display = 'none';
 					document.getElementById('fail').style.display = 'block';
 				}
+			}
+			<!-- from stack overflow -->
+			function gup (name) {
+  				name = RegExp ('[?&]' + name.replace (/([[\]])/, '\\$1') + '=([^&#]*)');
+  				return (window.location.href.match (name) || ['', ''])[1];
 			}
 		</script>
 		<!-- End thank-you -->
