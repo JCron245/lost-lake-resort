@@ -15,16 +15,16 @@ app.post('/send_mail', function(req, res) {
 		to: 'lostlakeriverresort@gmail.com', // list of receivers
 		subject: req.body.subject, 
 		text: req.body.message, // plaintext body
-		html: '<p>' + req.body.message + '</p>', // html body
+		html: '<body style="background-color: #333; color: #FFF;"><p>' + req.body.message + '</p></body>', // html body
 	};
 	
 	transport.sendMail(mail_opts, function(err, info) {
 		if (err){
 			console.log('Could not send mail: ' + err);
-			return res.render('/', {msg: 'There was a problem sending the email!'});
+			res.redirect('/#/thank-you/fail');
 		}
-		res.render('/index.html', {msg: 'Your email has been sent!'});
 		console.log('Message sent: ' + info.response);
+		res.redirect('/#/contact');
 	}); // end sendMail block
 	
 	
