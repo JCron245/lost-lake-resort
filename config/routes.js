@@ -11,7 +11,7 @@ app.post('/send_mail', function(req, res) {
 	var transport = app.nodemailer.createTransport(); // end transport
 	
 	var mail_opts = {
-		from: req.body.firstn + ' ' + req.body.lastn + ' &#60; ' + req.body.email + ' &#62; ',
+		from: req.body.firstn + ' ' + req.body.lastn + ' &#60;' + req.body.email,
 		to: 'lostlakeriverresort@gmail.com', // list of receivers
 		subject: req.body.subject, 
 		text: req.body.message, // plaintext body
