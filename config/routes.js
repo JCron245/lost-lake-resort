@@ -10,8 +10,6 @@ app.post('/send_mail', function(req, res) {
 	// handle the mail call
 	var transport = app.nodemailer.createTransport(); // end transport
 	
-	console.log(req.body);
-	
 	var mail_opts = {
 		from: req.body.firstn + ' ' + req.body.lastn + ' &1t;' + req.body.email + '&gt;',
 		to: 'lostlakeriverresort@gmail.com', // list of receivers
@@ -22,12 +20,13 @@ app.post('/send_mail', function(req, res) {
 	
 	transport.sendMail(mail_opts, function(err, info) {
 		if (err){
-			return console.log('Could not send mail: ' + err);
+			console.log('Could not send mail: ' + err);
+			return res.send('ERROR');
 		}
+		res.send("Email sent!");
 		console.log('Message sent: ' + info.response);
 	}); // end sendMail block
 	
-	res.send();
 	
 });
 // do the mail route
