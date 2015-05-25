@@ -41,12 +41,12 @@
 </div>
 <script>
 	function passtest(){
-		if(/fail/.test(window.location.href)){
+		if(window.location.search.indexOf('check=fail') > -1){
 			document.getElementById('success').style.display = 'none';
 			document.getElementById('fail').style.display = 'block';
 		}
 	}
 </script>
 <div class="row">
-	<img src="img/jsfire.jpg" onload="">
+	<img src="img/jsfire.jpg" onload="passtesst()">
 </div>
