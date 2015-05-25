@@ -11,7 +11,7 @@
 </div>
 
 <div class="row">	
-	<div class="small-12 medium-6 columns" id="fail" style="display: hidden;">
+	<div class="small-12 medium-6 columns" id="fail" style="display: none;">
 		<h3>
 			Your email failed to send!
 		</h3>		
@@ -39,14 +39,6 @@
 		</address>
 	</div>			
 </div>
-<script>
-	function passtest(){
-		if(window.location.search.indexOf('check=fail') > -1){
-			document.getElementById('success').style.display = 'none';
-			document.getElementById('fail').style.display = 'block';
-		}
-	}
-</script>
 <div class="row">
-	<img src="img/jsfire.jpg" onload="passtesst()">
+	<img src="img/jsfire.jpg" onload="">
 </div>

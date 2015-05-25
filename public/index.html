@@ -27,6 +27,16 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<!-- End Social Stuff -->
+		<!-- Thank-you page script -->
+		<script>
+			function passtest(){
+				if(window.location.search.indexOf('check=fail') > -1){
+					document.getElementById('success').style.display = 'none';
+					document.getElementById('fail').style.display = 'block';
+				}
+			}
+		</script>
+		<!-- End thank-you -->
 		<!-- Header -->
 		<div class="row nav-menu" ng-include="'/ng-apps/main/views/menu.html'">
 			
