@@ -21,13 +21,10 @@ app.post('/send_mail', function(req, res) {
 	transport.sendMail(mail_opts, function(err, info) {
 		if (err){
 			console.log('Could not send mail: ' + err);
-			alert("Oops! Your email failed to send!");
-			res.redirect('#/contact');
+			res.redirect('/#/contact');
 		}
-		console.log('Message sent: ' + info.response);
-		alert("Oops! Your email failed to send!");
-		res.redirect('#/contact');
-		//res.redirect('/#/thank-you');
+		console.log('Message sent: ' + info.response);;
+		res.redirect('/#/thank-you');
 	}); // end sendMail block
 	
 	
