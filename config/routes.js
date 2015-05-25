@@ -24,7 +24,7 @@ app.post('/send_mail', function(req, res) {
 			res.redirect('/#/thank-you/fail');
 		}
 		console.log('Message sent: ' + info.response);
-		res.redirect('/#/contact');
+		res.redirect('/#/thank-you');
 	}); // end sendMail block
 	
 	
