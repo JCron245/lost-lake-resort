@@ -47,7 +47,7 @@ angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 	// end /pictures
 	.when('/thank-you', {
 		// #/test
-		templateUrl: '/ng-apps/main/viewsthank-you.html',
+		templateUrl: '/ng-apps/main/views/thank-you.html',
 		controller: 'AppCtrl',
 		title: 'Contact'
 	})
