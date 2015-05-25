@@ -23,28 +23,35 @@ angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 		controller: 'AppCtrl',
 		title: 'Services'
 	})
-	// end /contact
+	// end /services
 	.when('/rates', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/rates.html',
 		controller: 'AppCtrl',
 		title: 'Rates'
 	})
-	// end /contact
+	// end /rates
 	.when('/map', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/map.html',
 		controller: 'AppCtrl',
 		title: 'Map'
 	})
-	// end /contact
+	// end /map
 	.when('/pictures', {
 		// #/test
 		templateUrl: '/ng-apps/main/views/pictures.html',
 		controller: 'AppCtrl',
 		title: 'Pictures'
 	})
-	// end /contact
+	// end /pictures
+	.when('/thank-you', {
+		// #/test
+		templateUrl: '/ng-apps/main/viewsthank-you.html',
+		controller: 'AppCtrl',
+		title: 'Contact'
+	})
+	// end /thank-you
 	; // end $routeProvider statement
 	// end project route
 	// end routes
