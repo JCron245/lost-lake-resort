@@ -21,9 +21,9 @@ app.post('/send_mail', function(req, res) {
 	transport.sendMail(mail_opts, function(err, info) {
 		if (err){
 			console.log('Could not send mail: ' + err);
-			return res.render('/contact', {msg: 'There was a problem sending the email!'});
+			return res.render('/#/contact', {msg: 'There was a problem sending the email!'});
 		}
-		res.render('/contact', {msg: 'Your email has been sent!'});
+		res.render('/#/contact', {msg: 'Your email has been sent!'});
 		console.log('Message sent: ' + info.response);
 	}); // end sendMail block
 	
