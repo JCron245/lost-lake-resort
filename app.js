@@ -6,6 +6,9 @@ var app = express();
 var methodOverride = require('method-override');
 var nodemailer = require('nodemailer');
 app.nodemailer = nodemailer;
+//Configure express here to use body parser
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // configurate it all
     
