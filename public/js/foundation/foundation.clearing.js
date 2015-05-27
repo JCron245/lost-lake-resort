@@ -8,10 +8,10 @@
 
     settings : {
       templates : {
-        viewing : '<a href="#" class="clearing-close">&times;</a>' +
+        viewing : '<a href="/#/" class="clearing-close">&times;</a>' +
           '<div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt="" />' +
-          '<p class="clearing-caption"></p><a href="#" class="clearing-main-prev"><span></span></a>' +
-          '<a href="#" class="clearing-main-next"><span></span></a></div>' +
+          '<p class="clearing-caption"></p><a href="/#/" class="clearing-main-prev"><span></span></a>' +
+          '<a href="/#/" class="clearing-main-next"><span></span></a></div>' +
           '<img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt="" />' +
           '<img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt="" />'
       },
