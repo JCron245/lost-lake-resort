@@ -11,7 +11,7 @@
 		</p>
 		
 		<!-- START FORM -->
-		<form action="/send_mail" name="contactus" id="contactus" method="post">	
+		<form action="/send_mail" name="contactus" id="contactus" method="post" role="form" novalidate>	
 			<!-- First Name **REQUIRED need at least first name -->
 			<div class="row">
 				<div class="small-3 columns">
@@ -74,13 +74,25 @@
 			</div>
 			<!-- End Message -->
 		
+			<!-- reCAPTCHA --->
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="captcha" class="right">Captcha*</label>
+				</div>
+				<div class="small-9 columns">
+					<div name="captcha" id="captcha" re-captcha ng-model="user.captcha"></div>
+				</div>
+			</div>
+			<!-- End reCAPTCHA -->
+			
+			<!-- Submit and Clear buttons -->
 			<div class="row">
 				<div class="small-1 columns">
 					<!-- push the buttons over a little -->
 				</div>
 				<div class="small-11 columns">
 					<input type="clear" value="Clear" id="clear" class="alert round button" />
-					<input type="submit" value="Send" name="submit" id="submit" class="round button" />
+					<input type="submit" ng-disabled="contactus.$invalid" value="Send" name="submit" id="submit" class="round button" />
 				</div>
 			</div>
 		</form> 
