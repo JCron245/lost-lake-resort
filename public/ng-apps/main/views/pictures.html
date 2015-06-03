@@ -2,9 +2,9 @@
 	<div class="small-12 columns">
 		<h1>Pictures</h1>
 		<ul class="medium-block-grid-4 small-block-grid-2" data-clearing>
-			<li class="small-6 medium-3 columns photo" ng-repeat="photo in photos">
+			<li class="small-6 medium-3 columns photo" ng-repeat="photo in photos | limitTo:24">
 				<a href="{{photo.src}}">
-					<img src="{{ photo.src }}" onload="$(document).foundation('clearing', 'reflow');" />
+					<img src="{{ photo.src }}" onload="$(document).foundation('clearing', 'reflow');" alt="picture gallery photo" />
 				</a>
 			</li>
 		</ul>
