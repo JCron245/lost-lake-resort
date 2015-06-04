@@ -4,7 +4,7 @@ angular.module('AppCtrl', ['reCAPTCHA'])
 		//reCAPTCHA
 		reCAPTCHAProvider.setPublicKey('6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa');
 		reCAPTCHAProvider.setOptions({
-			theme: 'light'
+			//theme: 'light'
 			//$scope.console.log("theme set");
 		});
 		//END reCAPTCHA
