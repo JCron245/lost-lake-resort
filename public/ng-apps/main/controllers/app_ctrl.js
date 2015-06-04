@@ -1,8 +1,16 @@
 angular.module('AppCtrl', ['reCAPTCHA'])
 	.config(function (reCAPTCHAProvider){
+	
+		//reCAPTCHA
+		reCAPTCHAProvider.setPublicKey('wreetco69');
+		console.log("public key set");
 		reCAPTCHAProvider.setOptions({
 			theme: 'clean'
+			//$scope.console.log("theme set");
 		});
+		//END reCAPTCHA
+	
+	
 	})
 
 
@@ -29,16 +37,16 @@ angular.module('AppCtrl', ['reCAPTCHA'])
 			});
 		}; 
 		// end getFbPhotos method
-		$scope.user = {};
-		//set public key
-		reCAPTCHA.setPublicKey('wreetco69');
 	
+		//reCAPTCHA
+		$scope.user = {};
 		$scope.register = function() {
 			if($scope.contactus.$valid){
 				$scope.showdialog = true;
 				console.log('Form is valid');
 			}
 		}
+		//END reCAPTCHA
 		
 	}
 	//end controller
