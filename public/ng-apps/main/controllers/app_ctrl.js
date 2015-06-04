@@ -3,7 +3,7 @@ angular.module('AppCtrl', ['reCAPTCHA'])
 		//reCAPTCHA
 		reCAPTCHAProvider.setPublicKey('6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa');
 		reCAPTCHAProvider.setOptions({
-			theme: 'light'
+			theme: 'clean'
 		});
 		//END reCAPTCHA
 	})
@@ -38,7 +38,7 @@ angular.module('AppCtrl', ['reCAPTCHA'])
 		$scope.register = function() {
 			if($scope.contactus.$valid){
 				$scope.showdialog = true;
-				console.log('Form is valid');
+				//console.log('Form is valid');
 			}
 		}
 		//END reCAPTCHA
