@@ -3,7 +3,6 @@ angular.module('AppCtrl', ['reCAPTCHA'])
 	
 		//reCAPTCHA
 		reCAPTCHAProvider.setPublicKey('6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa');
-		console.log("public key set");
 		reCAPTCHAProvider.setOptions({
 			theme: 'clean'
 			//$scope.console.log("theme set");
