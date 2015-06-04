@@ -1,7 +1,7 @@
 angular.module('AppCtrl', ['reCAPTCHA'])
 	.config(function (reCAPTCHAProvider){
 		//reCAPTCHA
-		reCAPTCHAProvider.setPublicKey('6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa');
+		reCAPTCHAProvider.setPublicKey('wreetco69');
 		reCAPTCHAProvider.setOptions({
 			theme: 'clean'
 		});
