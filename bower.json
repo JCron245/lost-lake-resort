@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
-    "angular-re-captcha": "~0.2.0"
+    "angular-re-captcha": "~0.2.0",
+    "angular-recaptcha": "~2.2.3"
   }
 }
