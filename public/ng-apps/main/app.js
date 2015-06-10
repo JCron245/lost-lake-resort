@@ -1,7 +1,7 @@
-angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl', 'reCAPTCHA'])
+angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 
 // configuration
-.config(['$routeProvider', function($routeProvider, reCAPTCHAProvider) {
+.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 	
 	.when('/', {

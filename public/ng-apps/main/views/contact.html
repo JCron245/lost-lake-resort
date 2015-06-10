@@ -11,7 +11,7 @@
 		</p>
 		
 		<!-- START FORM -->
-		<form action="/send_mail" name="contactus" id="contactus" method="post" role="form" ng-controller="AppCtrl" novalidate>	
+		<form action="/send_mail" name="r.contactus" id="contactus" method="post" role="form" ng-submit="r.signup()" ng-controller="recapCtrl as r" novalidate>	
 			<!-- First Name **REQUIRED need at least first name -->
 			<div class="row">
 				<div class="small-3 columns">
@@ -80,7 +80,7 @@
 					<label for="captcha" class="right">Captcha*</label>
 				</div>
 				<div class="small-9 columns">
-					<div id="gRecaptcha" class="g-recaptcha" data-sitekey="6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa" re-captcha ng-model="user.captcha"></div>
+					<div vc-recaptcha key="'6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa'"  ></div>
 				</div>
 			</div>
 			<!-- End reCAPTCHA -->
@@ -92,7 +92,7 @@
 				</div>
 				<div class="small-11 columns">
 					<input type="clear" value="Clear" id="clear" class="alert round button" />
-					<input type="submit" ng-disabled="contactus.$invalid" value="Send" name="submit" id="submit" class="round button" />
+					<input type="submit" ng-disabled="r.contactus.$invalid" value="Send" name="submit" id="submit" class="round button" />
 				</div>
 			</div>
 		</form> 

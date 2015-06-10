@@ -15,15 +15,9 @@
 		<!-- end angular stuff -->
 		<script src="js/fbalbum.js"></script>
 		<!-- reCaptcha -->
-		<script type="text/javascript" src="bower_libs/angular-re-captcha/angular-re-captcha.js"></script>
-		<script type="text/javascript">
-			var onloadCallback = function() {
-				console.log("callback");
-				grecaptcha.render('gRecaptcha', {
-					'sitekey' : '6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa'
-				});
-			};
-		</script>
+		<script type="text/javascript" src="bower_libs/angular-recaptcha/release/angular-recaptcha.min.js"></script>
+		
+		<script src='https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit' async defer></script>
   </head>
   <body ng-app="meanWreed" ng-controller="AppCtrl">
 		<!-- SOCIAL STUFF -->
@@ -76,7 +70,6 @@
     <script>
       $(document).foundation();
     </script>
-		<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback@render=explicit' async defer></script>
   	<!-- end Footer -->
 	</body>
 </html>
