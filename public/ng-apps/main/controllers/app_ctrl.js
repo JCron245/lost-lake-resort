@@ -3,8 +3,9 @@ angular.module('AppCtrl', ['vcRecaptcha'])
 	.controller('recapCtrl', ['vcRecaptchaService', '$http', function(vcRecaptchaService, $http){
 		var vm = this;
 		vm.publickey = "6LeL2QcTAAAAABmreMgmSe6J3up5yrCEIpE-qBVa";
-		vm.signup = function(){
-			/* vcRecaptchaService.getResponse() gives you the g-captcha response */
+		
+		/* vm.signup = function(){
+			/* vcRecaptchaService.getResponse() gives you the g-captcha response 
 			if(vcRecaptchaService.getResponse() == ""){
 				console.log("Please resolve the captcha and submit");	
 			}else{
@@ -12,7 +13,7 @@ angular.module('AppCtrl', ['vcRecaptcha'])
 				var secret = '6LeL2QcTAAAAACLngOeFW7d5ACtikyc_Dy_MJo8o';
 				console.log("HTTP post next");
 				//var userip = '';
-				/* Ajax request to google server with g-captcha-string */
+				/* Ajax request to google server with g-captcha-string 
 				$http.post('https://www.google.com/recaptcha/api/siteverify?secret=' + secret + '&response=' + reCaptchaResponse).success(function(response){
 					if(response.success === true){
 						console.log("Successfully verified and signed up the recaptcha user");	
@@ -24,8 +25,8 @@ angular.module('AppCtrl', ['vcRecaptcha'])
 					console.log("Error validating response");
 				})
 				
-			}/* end else */
-		}
+			}/* end else
+		} */
 	}])
 
 	.controller('AppCtrl', function($scope, FbGallery) {	
