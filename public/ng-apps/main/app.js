@@ -1,7 +1,8 @@
 angular.module("meanWreed", ['FbGallery','ngRoute', 'AppCtrl'])
 
 // configuration
-.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+	$locationProvider.hashPrefix('');
 	$routeProvider
 	
 	.when('/', {
